@@ -48,6 +48,7 @@ public class ResponseResult<T> implements Serializable {
         return result.error(code, msg);
     }
 
+
     public static ResponseResult okResult(int code, String msg) {
         ResponseResult result = new ResponseResult();
         return result.ok(code, null, msg);
