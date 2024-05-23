@@ -63,10 +63,10 @@ public class HelloController {
         model.addAttribute("stuMap", stuMap);
 
         //日期
-        model.addAttribute("date", new Date());
+        //model.addAttribute("date", new Date());
 
         //内置函数c的使用
-        model.addAttribute("point", 1930307210);
+        //model.addAttribute("point", 1930307210);
 
 
 
