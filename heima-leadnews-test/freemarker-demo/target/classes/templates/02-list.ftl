@@ -83,8 +83,16 @@ stu集合的大小：${stus?size}<br/>
 <hr>
 
 日期的格式化：
-${date?datetime}<br/>
-${date?string("yyyy-MM-dd HH:mm:ss")}
+<#--${date?datetime}--><br/>
+<#--${date?string("yyyy-MM-dd HH:mm:ss")}-->
+<hr>
+<#--TODO 为什么添加 日期的格式化和内置函数c 这两个内置函数后就不能根据此文件生成相应的静态文件？-->
+内置函数c：
+<#--${point?c}<br/>-->
+
+将json字符串转换为json对象：
+<#assign jsonStr = '{"name":"张三","age":20}'/>
+<#assign jsonObj = jsonStr?eval/>
 
 </body>
 </html>
